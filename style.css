@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Sans&family=Inconsolata:wght@200;400;600;900&family=Kanit:ital,wght@0,500;0,600;1,500&family=Pacifico&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Code+Pro:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&w=600);
+  }
+  
+  html,
+  body {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  
+  .search {
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+  }
+  .search input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  .search input:focus-visible {
+    outline: 1px solid rgb(0, 0, 0);
+  }
+  
+  .primary-btn {
+    background: rgb(128, 58, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+  .primary-btn:hover {
+    background: rgba(55, 20, 1, 0.788);
+  }
+  .primary-btn:active {
+    background: rgba(231, 73, 59, 0.788);
+  }
+  
+  /* For Card */
+  
+  #profileContainer {
+    width: 100%;
+  }
+  .profile-box {
+    margin: auto;
+    padding: 4rem 2rem;
+    width: 90%;
+    max-width: 78rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in;
+  }
+  .profile-box:hover {
+    transform: rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+  }
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-section button {
+    align-self: center;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .left h1 {
+    font-size: 1.6rem;
+  }
+  
+  .avatar {
+    height: 10rem;
+    width: 10rem;
+  }
+  .avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .about {
+    margin: 2rem;
+  }
+  
+  .status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  
+  .status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
